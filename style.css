@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    width: 100%;
+    
+    
+    background-image: url("fon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    width: 90%;
+    max-width: 1400px;
+    height: 62px;
+    margin: 20px auto 0;   /* было: margin-top: 20px; */
+    padding: 0 25px;
+    background: rgba(135, 71, 19, 0.71);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+h1 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #663207;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+.conteiner {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;             
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+
+
+
+
+
+table{
+    border: none;
+    border-collapse: separate;
+}
+
+.pon {
+    width: 90%;
+    max-width: 550px;
+    padding: 20px;
+    margin-top: 25px;
+    background: rgba(161, 147, 128, 0.32);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    text-align: left;
+    backdrop-filter: blur(5px);
+}
+.vtor{
+    width: 90%;
+    max-width: 550px;
+    padding: 20px;
+    margin-top: 25px;
+    background: rgba(161, 147, 128, 0.32);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    text-align: left;
+    backdrop-filter: blur(5px);
+}
+.sred{
+    width: 90%;
+    max-width: 550px;
+    padding: 20px;
+    margin-top: 25px;
+    background: rgba(161, 147, 128, 0.32);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    text-align: left;
+    backdrop-filter: blur(5px);
+}
+.chet{
+    width: 90%;
+    max-width: 550px;
+    padding: 20px;
+    margin-top: 25px;
+    background: rgba(161, 147, 128, 0.32);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    text-align: left;
+    backdrop-filter: blur(5px);
+}
+.pyt{
+    width: 90%;
+    max-width: 550px;
+    padding: 20px;
+    margin-top: 25px;
+    
+    background: rgba(161, 147, 128, 0.32);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    text-align: left;
+    backdrop-filter: blur(5px);
+}
+
+
+
+
+
+h2{
+    font-weight: 700;
+    font-size: 20px;
+    color: #663207;
+    margin-bottom: 20px;
+    
+}
+td{
+    font-weight: 550;
+    font-size: 15px;
+    color: #663207;
+    
+
+}
+
+
+button{
+    width: 90%;
+    max-width: 200px;
+    height: 100px;
+    padding: 20px;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    background: rgba(161, 147, 128, 0.32);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+
+}
+a{
+    color: #663207;
+    text-align: center;
+    font-weight: 550;
+    font-size: 15px;
+    color: #663207;
+
+}
+.menu {
+    display: flex;
+    flex-direction: column;   /* кнопки в столбик (если нужно) */
+    justify-content: center;  /* центр по горизонтали */
+    align-items: center;      /* центр по вертикали для column */
+    gap: 15px;                /* отступ между кнопками */
+    min-height: calc(100vh - 82px); /* высота экрана минус header */
+}
+
+@media (max-width: 900px) {
+    header {
+        width: 95%;
+        height: 56px;
+        padding: 0 15px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+
+    .conteiner {
+        width: 95%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .pon, .vtor, .sred, .chet, .pyt {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        width: 95%;
+        height: 50px;
+        padding: 0 12px;
+        margin-top: 12px;
+    }
+    h1 {
+        font-size: 18px;
+        margin-left: 8px;
+    }
+    header svg {
+        width: 16px;
+        height: 21px;
+        flex-shrink: 0;
+    }
+
+    .conteiner {
+        width: 95%;
+    }
+
+    .pon, .vtor, .sred, .chet, .pyt {
+        padding: 14px;
+        margin-top: 14px;
+        border-radius: 12px;
+    }
+
+    h2 {
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+
+    table, tr, td {
+        display: block;
+        width: 100%;
+    }
+    tr {
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(102, 50, 7, 0.25);
+    }
+    tr:last-child {
+        border-bottom: none;
+    }
+    td {
+        font-size: 14px;
+        padding: 2px 0;
+    }
+    td:first-child {
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 18px;
+        margin: 10px 0 0 0;
+        font-size: 15px;
+    }
+
+    .menu {
+        min-height: calc(100vh - 70px);
+        padding: 0 2.5%;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+    h1 { font-size: 16px; }
+    h2 { font-size: 15px; }
+    td, a { font-size: 13px; }
+
+    .pon, .vtor, .sred, .chet, .pyt {
+        padding: 12px;
+    }
+}
